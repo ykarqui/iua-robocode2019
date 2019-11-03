@@ -5,9 +5,10 @@ import java.awt.Color;
 import robocode.HitByBulletEvent;
 import robocode.HitRobotEvent;
 import robocode.HitWallEvent;
+import robocode.Robot;
 import robocode.ScannedRobotEvent;
 
-public class ponceboycito {
+public class ponceboycito extends Robot{
 public void run() {
 		
 		setBodyColor(Color.red);
@@ -19,17 +20,18 @@ public void run() {
 		
 		while (true) {
 			turnGunRight(5);
+			ahead(2);
 		}
 	}
 
 	
-	private void turnGunRight(double d) {
+	public void turnGunRight(double d) {
 	// TODO Auto-generated method stub
 	
 }
 
 
-	private void setBodyColor(Color red) {
+	public void setBodyColor(Color red) {
 	// TODO Auto-generated method stub
 	
 }
@@ -48,19 +50,19 @@ public void run() {
 	}
 
 	
-	private void scan() {
+	public void scan() {
 		// TODO Auto-generated method stub
 		
 	}
 
 
-	private void fire(int i) {
+	public void fire(int i) {
 		// TODO Auto-generated method stub
 		
 	}
 
 
-	private int getEnergy() {
+	public double getEnergy() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -75,13 +77,13 @@ public void run() {
 	}
 
 	
-	private void ahead(Object dist) {
+	public void ahead(Object dist) {
 		// TODO Auto-generated method stub
 		
 	}
 
 
-	private double getHeading() {
+	public double getHeading() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
